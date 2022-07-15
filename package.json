@@ -1,0 +1,60 @@
+{
+	"name": "sidewinder",
+	"version": "0.0.0",
+	"license": "MIT",
+	"bin": "dist/src/cli.js",
+	"engines": {
+		"node": ">=10"
+	},
+	"scripts": {
+		"clean": "rm -rf ./dist/*",
+		"build": "tsc && chmod +x dist/src/cli.js",
+		"start": "npm run build && DEV=true node dist/src/cli.js",
+		"devtool": "npx react-devtools",
+		"pretest": "npm run build",
+		"test": "xo && ava"
+	},
+	"files": [
+		"dist/src/cli.js"
+	],
+	"dependencies": {
+		"ink": "^3.2.0",
+		"meow": "^9.0.0",
+		"react": "^17.0.2"
+	},
+	"eslintConfig": {
+		"extends": [
+			"react-app",
+			"react-app/jest"
+		]
+	},
+	"ava": {
+		"typescript": {
+			"extensions": [
+				"tsx"
+			],
+			"rewritePaths": {
+				"src/": "dist/"
+			}
+		}
+	},
+	"xo": {
+		"extends": "xo-react",
+		"rules": {
+			"react/prop-types": "off"
+		}
+	},
+	"devDependencies": {
+		"@ava/typescript": "^3.0.1",
+		"@sindresorhus/tsconfig": "^3.0.1",
+		"@types/react": "^18.0.15",
+		"ava": "^4.3.0",
+		"chalk": "^4.1.2",
+		"eslint-config-xo-react": "^0.27.0",
+		"eslint-plugin-react": "^7.30.1",
+		"eslint-plugin-react-hooks": "^4.6.0",
+		"ink-testing-library": "^2.1.0",
+		"typescript": "^4.7.4",
+		"xo": "^0.39.1"
+	}
+}

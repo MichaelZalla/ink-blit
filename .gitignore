@@ -1,0 +1,11 @@
+# npm
+node_modules
+
+# tsc
+tsconfig.tsbuildinfo
+
+# build
+dist
+
+# macos
+.DS_Store
