@@ -1,0 +1,19 @@
+{
+  "usesTypeScript": true,
+  "usesCssModule": false,
+  "testLibrary": "Testing Library",
+  "component": {
+    "default": {
+      "path": "examples/tetris/components",
+      "withStyle": false,
+      "withTest": false,
+      "withStory": false,
+      "withLazy": false,
+      "customTemplates": {
+        "component": "./generate-react-templates/TemplateName.tsx",
+        "test": "./generate-react-templates/TemplateName.test.tsx"
+      }
+    }
+  },
+  "cssPreprocessor": "scss"
+}
