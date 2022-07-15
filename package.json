@@ -3,7 +3,9 @@
 	"description": "React hooks and components for building command-line games with Ink.",
 	"version": "0.0.0",
 	"license": "MIT",
-	"bin": "dist/src/cli.js",
+	"bin": {
+		"snake": "dist/examples/snake/cli.js"
+	},
 	"engines": {
 		"node": ">=10"
 	},
@@ -11,12 +13,14 @@
 		"clean": "rm -rf ./dist/*",
 		"build": "tsc && chmod +x dist/src/cli.js",
 		"start": "npm run build && DEV=true node dist/src/cli.js",
+		"build:snake": "tsc && chmod +x dist/examples/snake/cli.js",
+		"start:snake": "npm run build:snake && DEV=true node dist/examples/snake/cli.js",
 		"devtool": "npx react-devtools",
 		"pretest": "npm run build",
 		"test": "xo && ava"
 	},
 	"files": [
-		"dist/src/cli.js"
+		"dist/examples/snake/cli.js"
 	],
 	"dependencies": {
 		"ink": "^3.2.0",
