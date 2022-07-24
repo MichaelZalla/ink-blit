@@ -4,7 +4,7 @@ import { Box, DOMElement, measureElement } from 'ink';
 
 import useTerminalDimensions from '../../hooks/useTerminalSize';
 
-import FullScreenContext, { FullScreenContextProviderValue } from './contexts/FullScreenContext';
+import FullScreenContext from './contexts/FullScreenContext';
 
 type FullScreenProps = React.PropsWithChildren<any>
 
