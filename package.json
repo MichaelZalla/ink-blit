@@ -1,5 +1,5 @@
 {
-	"name": "sidewinder",
+	"name": "ink-blit",
 	"version": "0.0.0",
 	"license": "MIT",
 	"bin": "dist/src/cli.js",
