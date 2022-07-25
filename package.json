@@ -4,7 +4,8 @@
 	"version": "0.0.0",
 	"license": "MIT",
 	"bin": {
-		"snake": "dist/examples/snake/cli.js"
+		"snake": "dist/examples/snake/cli.js",
+		"pong": "dist/examples/pong/cli.js"
 	},
 	"engines": {
 		"node": ">=10"
@@ -15,12 +16,15 @@
 		"start": "npm run build && DEV=true node dist/src/cli.js",
 		"build:snake": "tsc && chmod +x dist/examples/snake/cli.js",
 		"start:snake": "npm run build:snake && DEV=true node dist/examples/snake/cli.js",
+		"build:pong": "tsc && chmod +x dist/examples/pong/cli.js",
+		"start:pong": "npm run build:pong && DEV=true node dist/examples/pong/cli.js",
 		"devtool": "npx react-devtools",
 		"pretest": "npm run build",
 		"test": "xo && ava"
 	},
 	"files": [
-		"dist/examples/snake/cli.js"
+		"dist/examples/snake/cli.js",
+		"dist/examples/pong/cli.js"
 	],
 	"dependencies": {
 		"ink": "^3.2.0",
