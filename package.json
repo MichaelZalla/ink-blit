@@ -19,7 +19,6 @@
 	],
 	"dependencies": {
 		"ink": "^3.2.0",
-		"meow": "^9.0.0",
 		"react": "^17.0.2"
 	},
 	"eslintConfig": {
