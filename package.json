@@ -1,5 +1,6 @@
 {
 	"name": "ink-blit",
+	"description": "React hooks and components for building command-line games with Ink.",
 	"version": "0.0.0",
 	"license": "MIT",
 	"bin": "dist/src/cli.js",
