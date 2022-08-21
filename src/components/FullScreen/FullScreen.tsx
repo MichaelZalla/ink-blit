@@ -2,7 +2,7 @@ import React, { FC, useRef } from 'react';
 
 import { Box, DOMElement, measureElement } from 'ink';
 
-import useTerminalDimensions from '../../hooks/useTerminalSize';
+import useTerminalDimensions from '../../hooks/useTerminalDimensions';
 
 import FullScreenContext from './contexts/FullScreenContext';
 
